@@ -1,0 +1,19 @@
+{
+  "name": "pete-tutorial",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Pete Moore <pmoore@mozilla.com>",
+  "description": "taskcluster javascript tutorial",
+  "scripts": {
+    "compile": "babel-compile -p taskcluster src:lib",
+    "install": "npm run compile"
+  },
+  "dependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-compile": "^2.0.0",
+    "babel-preset-taskcluster": "^3.0.0",
+    "babel-runtime": "^6.11.6",
+    "slugid": "^1.1.0",
+    "taskcluster-client": "^1.2.1"
+  }
+}
